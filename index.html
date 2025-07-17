@@ -3,34 +3,50 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Mapa de Tornada</title>
-
-  <!-- Leaflet CSS -->
-  <link
-    rel="stylesheet"
-    href="https://unpkg.com/leaflet/dist/leaflet.css"
-  />
-  <!-- Routing Machine CSS -->
-  <link
-    rel="stylesheet"
-    href="https://unpkg.com/leaflet-routing-machine/dist/leaflet-routing-machine.css"
-  />
-  <!-- Seu estilo -->
+  <title>Freguesia</title>
   <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
 </head>
 <body>
   <header>
-    <h1>Mapa de Tornada</h1>
-    <p>Toque em um ponto para ver a rota a partir da sua localização</p>
+    <div class="logo">União das freguesias de Tornada e Salir do Porto </div> <!-- Logo ou título da página -->
+    <nav>
+      <ul> <!-- Menu de navegação -->
+        <li><a href="#">Início</a></li> 
+        <li><a href="#">Contato</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <div id="map"></div>
+  <section class="hero"> 
+    <div class="hero-texto"> <!-- Texto principal da seção hero -->
+      <h1>Descobres os melhores locais para visitar </h1> <!-- Título principal -->
+      <p>Reservas naturais e históricos do país</p> ><!-- Descrição breve -->
+    </div>
+  </section>
+  <section class="percursos">
+  <h2>Os percursos</h2> <!-- Título da seção -->
+  <p>
+    Os percursos disponíveis escolhidos estão distribuídos entre Tornada e Salir do porto.
+  </p> 
 
-  <!-- Leaflet JS -->
-  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
-  <!-- Routing Machine -->
-  <script src="https://unpkg.com/leaflet-routing-machine/dist/leaflet-routing-machine.min.js"></script>
-  <!-- Script principal -->
-  <script src="script.js"></script>
+  <div class="percursos-grid"> <!-- Grid para os percursos -->
+    <div class="percurso-item"> <!-- Item do percurso -->
+      <a href="tornada.html" class="percurso-item"> 
+        <img src="/projetorota/imagem/tornada.png" alt="Ecovia do Vez">
+        <div class="numero">01</div> 
+        <div class="titulo">Tornada</div>
+       </a>
+    </div>
+
+    <div class="percurso-item"> <!-- Item do percurso -->
+      <a href="salir.html" class="percurso-item"> 
+      <img src="/projetorota/imagem/salir.png" alt="Gerês">
+      <div class="numero">02</div>
+      <div class="titulo">Salir do porto</div>
+        </a>
+    </div>
+</section>
+
 </body>
 </html>
